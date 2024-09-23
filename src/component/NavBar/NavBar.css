@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lets-talk-btn{
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    text-transform: uppercase;
+    border-width: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-family: "Outfit";
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.15);
+}
