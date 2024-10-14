@@ -1,0 +1,79 @@
+.name{
+    font-size: 6em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-align: center;
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding-right:2rem ;
+    padding-left:2rem ;
+}
+.about-container{
+    display: flex;
+    width: 70%;
+}
+.skills-list{
+    display: flex;
+}
+.social-media-list{
+    display: flex;
+}
+.title{
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.bio{
+    margin: 0;
+    line-height: 1.74;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hero-avatar{
+    margin-left: 7rem;
+}
+.hero-avatar img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+.title{
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: 0;
+}
+.sub-title{
+    line-height: 1.1;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    letter-spacing: -0.3px;
+}
+.bio-title{
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.skill-menu{
+    list-style-type: circle;
+    padding-Right: 1rem;
+}
+.social-menu{
+    padding-Right: 1rem; 
+}
+.list{
+    list-style: none;
+}
