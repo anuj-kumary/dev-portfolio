@@ -1,0 +1,27 @@
+
+.container {
+    padding: 0 20px;
+    margin-top: 5rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: center;
+    width: 100%;
+}
+.sub-heading{
+    text-align: center;
+    width: 100%;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
