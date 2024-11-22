@@ -1,0 +1,100 @@
+  .portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .nav-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .portfolio {
+    overflow: hidden;
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 0 calc(33.333% - 20px);
+    margin: 0 10px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card-languages {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .card-language-item {
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(100% - 20px);
+    }
+  
+    .nav-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
