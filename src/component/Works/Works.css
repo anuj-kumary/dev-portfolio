@@ -14,11 +14,16 @@
     letter-spacing: -0.3px;
     text-align: center;
     width: 100%;
+    margin: 0;
 }
-.sub-heading{
+.sub-heading {
     text-align: center;
-    width: 100%;
+    width: 70%; 
+    margin: 0 auto 3rem;
+    line-height: 1.6; 
+    font-size: 1.2rem;
 }
+
 
 .text-gradient {
     background: -webkit-linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
