@@ -1,4 +1,4 @@
-import { PortfolioWork } from "../../common/Card/Card";
+import { PortfolioWork } from "../PortfolioWork/PortfolioWork";
 import "./Works.css";
 export const Works = () => {
   return (
