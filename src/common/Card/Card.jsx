@@ -1,7 +1,7 @@
 import "./Card.css";
 
-import  { useState } from "react";
-
+import { useState } from "react";
+import { ArrowLeft,ArrowRight } from "lucide-react";
 
 const Card = ({ image, title, languages }) => {
   return (
@@ -23,14 +23,46 @@ const Card = ({ image, title, languages }) => {
 
 export const PortfolioWork = () => {
   const projects = [
-    { image: "https://via.placeholder.com/300", title: "Project 1", languages: ["JavaScript", "React", "CSS"] },
-    { image: "https://via.placeholder.com/300", title: "Project 2", languages: ["HTML", "CSS", "TypeScript"] },
-    { image: "https://via.placeholder.com/300", title: "Project 3", languages: ["Python", "Flask", "SQL"] },
-    { image: "https://via.placeholder.com/300", title: "Project 4", languages: ["C++", "Data Structures"] },
-    { image: "https://via.placeholder.com/300", title: "Project 5", languages: ["Java", "Spring Boot"] },
-    { image: "https://via.placeholder.com/300", title: "Project 6", languages: ["Kotlin", "Android"] },
-    { image: "https://via.placeholder.com/300", title: "Project 7", languages: ["Ruby", "Rails"] },
-    { image: "https://via.placeholder.com/300", title: "Project 8", languages: ["PHP", "Laravel"] },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 1",
+      languages: ["JavaScript", "React", "CSS"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 2",
+      languages: ["HTML", "CSS", "TypeScript"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 3",
+      languages: ["Python", "Flask", "SQL"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 4",
+      languages: ["C++", "Data Structures"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 5",
+      languages: ["Java", "Spring Boot"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 6",
+      languages: ["Kotlin", "Android"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 7",
+      languages: ["Ruby", "Rails"],
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Project 8",
+      languages: ["PHP", "Laravel"],
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,8 +82,12 @@ export const PortfolioWork = () => {
 
   return (
     <div className="portfolio-container">
-      <button onClick={handlePrev} className="nav-button" disabled={currentIndex === 0}>
-        Prev
+      <button
+        onClick={handlePrev}
+        className="nav-button"
+        disabled={currentIndex === 0}
+      >
+        <ArrowLeft />
       </button>
       <div className="portfolio">
         <div
@@ -70,11 +106,13 @@ export const PortfolioWork = () => {
           ))}
         </div>
       </div>
-      <button onClick={handleNext} className="nav-button" disabled={currentIndex + cardsPerView >= projects.length}>
-        Next
+      <button
+        onClick={handleNext}
+        className="nav-button"
+        disabled={currentIndex + cardsPerView >= projects.length}
+      >
+        <ArrowRight />
       </button>
     </div>
   );
 };
-
-
