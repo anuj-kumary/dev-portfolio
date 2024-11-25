@@ -1,4 +1,5 @@
 import './App.css'
+import Experience from './component/Experience/Experience'
 import { HeroSection } from './component/HeroSection/HeroSection'
 import { Works } from './component/Works/Works'
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <HeroSection />
     <Works />
+    <Experience />
     </>
   )
 }
