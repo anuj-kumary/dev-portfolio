@@ -1,3 +1,4 @@
+import React from "react"
 import "../Navbar/NavBar.css"
 export const NavBar = () => {
   return (

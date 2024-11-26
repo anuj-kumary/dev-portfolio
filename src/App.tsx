@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 import Experience from './component/Experience/Experience'
 import { HeroSection } from './component/HeroSection/HeroSection'

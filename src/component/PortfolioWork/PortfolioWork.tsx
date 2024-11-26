@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowLeft,ArrowRight } from "lucide-react";
 import { Card } from "../../common/Card/Card";
 import "./PortfolioWork.css"
+import React from "react";
 
 const projects = [
     {

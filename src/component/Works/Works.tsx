@@ -1,3 +1,4 @@
+import React from "react";
 import { PortfolioWork } from "../PortfolioWork/PortfolioWork";
 import "./Works.css";
 export const Works = () => {

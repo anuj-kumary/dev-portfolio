@@ -1,3 +1,4 @@
+import React from "react";
 import "../HeroSection/HeroSection.css";
 export const HeroSection = () => {
   return (
