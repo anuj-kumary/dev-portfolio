@@ -19,11 +19,12 @@ const Experience = () => {
     }
   ];
 
-  const containerRef = useRef();
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const elements = containerRef.current.querySelectorAll(".roadmap-item");
+      const elements = containerRef.current!.querySelectorAll(".roadmap-item");
+
       const windowHeight = window.innerHeight;
 
       elements.forEach((el) => {

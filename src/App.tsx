@@ -1,8 +1,8 @@
-import React from 'react'
 import './App.css'
-import Experience from './component/Experience/Experience'
 import { HeroSection } from './component/HeroSection/HeroSection'
 import { Works } from './component/Works/Works'
+import { LanguagesAndTools } from './component/LanguagesAndTools/LanguagesAndTools'
+import Experience from './component/Experience/Experience'
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
     <HeroSection />
     <Works />
     <Experience />
+    <LanguagesAndTools />
     </>
   )
 }
