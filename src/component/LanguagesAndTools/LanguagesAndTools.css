@@ -1,0 +1,55 @@
+.tools-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .tools-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tool-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .tool-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .tool-image {
+      width: 50px;
+      height: 50px;
+    }
+    .tool-name {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tool-image {
+      width: 40px;
+      height: 40px;
+    }
+    .tool-name {
+      font-size: 0.9rem;
+    }
+  }
+  
