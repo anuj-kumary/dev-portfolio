@@ -77,3 +77,69 @@
 .list{
     list-style: none;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .name {
+        font-size: 4em;
+    }
+
+    .hero-avatar img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sub-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 3em;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-list, .social-media-list {
+        justify-content: center;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2em;
+    }
+
+    .bio {
+        font-size: 0.9rem;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    .hero-avatar img {
+        width: 150px;
+        height: 150px;
+    }
+}
