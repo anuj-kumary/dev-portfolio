@@ -1,9 +1,23 @@
 import { useState, useRef, useEffect } from "react";
 import "./MenuButton.css";
 
+const MENU_OPTION = [
+    { label: "About", name: "about" },
+    { label: "Portfolio", name: "portfolio" },
+    { label: "Experience", name: "experience" },
+    { label: "Languages and Tools", name: "languages-tools" },
+    { label: "Contact", name: "contact" }
+]
+    ;
+
 export const MenuButton: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
+
+    const handleOptionClick = () => {
+        setIsMenuOpen(false);
+    };
+
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -25,9 +39,9 @@ export const MenuButton: React.FC = () => {
                 Menu
             </button>
             <div className={`menu-options ${isMenuOpen ? "show" : ""}`}>
-                <div className="menu-option">Option 1</div>
-                <div className="menu-option">Option 2</div>
-                <div className="menu-option">Option 3</div>
+                {MENU_OPTION.map((option) => (
+                    <a onClick={handleOptionClick} href={`#${option.name}`} className="menu-option">{option.label}</a>
+                ))}
             </div>
         </div>
     );

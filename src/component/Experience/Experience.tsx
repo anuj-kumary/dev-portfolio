@@ -43,7 +43,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="experience-roadmap">
+    <section id="experience" className="experience-roadmap">
       <h3 className="heading">
         Work <span className="text-gradient">Experience</span>
       </h3>

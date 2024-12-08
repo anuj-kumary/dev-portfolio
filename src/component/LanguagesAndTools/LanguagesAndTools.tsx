@@ -27,7 +27,7 @@ const tools: Tool[] = [
 
 export const LanguagesAndTools: React.FC = () => {
   return (
-    <section className="tools-section">
+    <section id='languages-tools' className="tools-section">
       <h2>Languages and Tools</h2>
       <div className="tools-grid">
         {tools.map((tool, index) => (

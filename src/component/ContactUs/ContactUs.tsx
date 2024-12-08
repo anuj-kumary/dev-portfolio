@@ -3,7 +3,7 @@ import './ContactUs.css';
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="contact-container">
+    <div id='contact' className="contact-container">
       <div className="contact-content">
         <h1>Send me a message!</h1>
         <p>Got a question or proposal, or just want to say hello? Go ahead.</p>

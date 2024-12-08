@@ -1,9 +1,8 @@
-import React from "react";
 import { PortfolioWork } from "../PortfolioWork/PortfolioWork";
 import "./Works.css";
 export const Works = () => {
   return (
-    <div className="container">
+    <div id="portfolio" className="container">
       <div className="row">
         <h3 className="heading">
           Recent <span className="text-gradient">Works</span>
