@@ -110,10 +110,18 @@
         align-items: center;
         text-align: center;
     }
+    .hero-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
 
     .hero-avatar img {
         width: 200px;
         height: 200px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
 
     .skills-list, .social-media-list {
@@ -138,8 +146,17 @@
         font-size: 2rem;
     }
 
+    .hero-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
     .hero-avatar img {
         width: 150px;
         height: 150px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
 }
