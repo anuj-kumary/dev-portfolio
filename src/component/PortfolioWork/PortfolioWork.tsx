@@ -35,6 +35,7 @@ const projects = [
     languages: ["HTML", "CSS ", "Javascript"],
   },
 ];
+
 export const PortfolioWork = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardsPerView = 3;
