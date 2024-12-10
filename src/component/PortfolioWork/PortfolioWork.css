@@ -1,57 +1,58 @@
 .portfolio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  position: relative;
-}
-
-.nav-button {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  -webkit-transition: linear 0.1s;
-  transition: linear 0.1s;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-button:hover {
-  background: -webkit-linear-gradient(
-    45deg,
-    #ff82f3 0%,
-    #7b13ff 50%,
-    #400d64 100%
-  );
-}
-
-.nav-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.nav-button:disabled:hover {
-  background: #30363d;
-  color: #6c757d;
-}
-
-.portfolio {
-  overflow: hidden;
-  width: 80%;
-  max-width: 1000px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 4rem;
+  }
+  
+  .nav-button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: linear 0.1s;
+    transition: linear 0.1s;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-button:hover {
+    background: -webkit-linear-gradient(
+      45deg,
+      #ff82f3 0%,
+      #7b13ff 50%,
+      #400d64 100%
+    );
+  }
+  
+  .nav-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .nav-button:disabled:hover {
+    background: #30363d;
+    color: #6c757d;
+  }
+  
+  .portfolio {
+    overflow: hidden;
+    width: 80%;
+    max-width: 1000px;
+  }
 
 .cards-wrapper {
   display: flex;
