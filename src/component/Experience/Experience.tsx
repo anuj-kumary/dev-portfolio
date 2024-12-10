@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
 import "./Experience.css";
+import { CircleChevronRight } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -8,58 +8,35 @@ const Experience = () => {
       year: "2023 - Present",
       role: "Software Engineer",
       description:
-        "Developed scalable web applications and enhanced user experiences with modern frameworks and tools.",
+        "Contributed to Uber’s core data workflow platform, enhancing  scalability, reliability, and data-driven decision-making through optimized data pipeline orchestration. Designed secure authentication with Node.js and PostgreSQL, enabling private API access for authenticated users.",
     },
     {
       company: "Deuex Solutions",
       year: "2022 - 2023",
       role: "Frontend Developer",
       description:
-        "Built responsive and dynamic user interfaces for various client projects using React and Tailwind CSS.",
+        "Enhanced StarTree’s data platform with a minimalist UI, improving user engagement and satisfaction.Led the development of an HRMS app with MERN stack, integrating document uploads and seamless type-checker flow.Built GiverBox, a React Native app for hosting contests, with features like filtering and saving contests, and successfully launched it on the Play Store within three months.Actively contributed to open-source projects by improving code, reviewing features, and driving innovation.",
     }
   ];
 
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const elements = containerRef.current!.querySelectorAll(".roadmap-item");
-
-      const windowHeight = window.innerHeight;
-
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top <= windowHeight - 100) {
-          el.classList.add("visible");
-        } else {
-          el.classList.remove("visible");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <section id="experience" className="experience-roadmap">
-      <h3 className="heading">
-        Work <span className="text-gradient">Experience</span>
-      </h3>
-      <div className="roadmap-container" ref={containerRef}>
+    <section className="experience-section">
+      <h1 className="experience-title">My Experience</h1>
+      <div className="experience-container">
         {experiences.map((exp, index) => (
-          <div
-            className={`roadmap-item ${index % 2 === 0 ? "left" : "right"}`}
-            key={index}
-          >
-            <div className="roadmap-content">
-              <h3 className="company-name">{exp.company}</h3>
+          <div className="experience-item" key={index}>
+            <div className="experience-left">
               <p className="experience-year">{exp.year}</p>
-              <h4 className="job-role">{exp.role}</h4>
-              <p className="job-description">{exp.description}</p>
+              <div className="experience-icon-line">
+                <div className="experience-line"></div>
+                <span className="experience-icon"><CircleChevronRight size={"20px"} /></span>
+              </div>
+              <p className="experience-company">{exp.company}</p>
             </div>
-            <div className="roadmap-dot"></div>
+            <div className="experience-right">
+              <h3 className="experience-role">{exp.role}</h3>
+              <p className="experience-description">{exp.description}</p>
+            </div>
           </div>
         ))}
       </div>
