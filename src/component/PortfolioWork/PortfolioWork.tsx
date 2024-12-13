@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Card } from "../../common/Card/Card";
 import "./PortfolioWork.css"
+import { useWindowWidth } from "../../hooks/useWindowWidth";
 
 const projects = [
   {
@@ -37,8 +38,11 @@ const projects = [
 ];
 
 export const PortfolioWork = () => {
+  const width = useWindowWidth();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerView = 3;
+  // Dynamically set the number of cards per view
+  const cardsPerView =
+    width >= 1024 ? 3 : width >= 768 ? 2 : 1;
 
   const handleNext = () => {
     if (currentIndex + cardsPerView < projects.length) {
