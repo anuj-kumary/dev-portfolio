@@ -23,12 +23,12 @@ const tools: Tool[] = [
   { name: 'Git', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
   { name: 'GitHub', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
 ];
-          
+
 
 export const LanguagesAndTools: React.FC = () => {
   return (
     <section id='languages-tools' className="tools-section">
-      <h2>Languages and Tools</h2>
+      <h1 className="languages-title">Language <span className="text-gradient">& Tools</span></h1>
       <div className="tools-grid">
         {tools.map((tool, index) => (
           <div key={index} className="tool-item">
