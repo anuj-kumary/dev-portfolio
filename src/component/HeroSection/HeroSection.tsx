@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </div>
         <div className="hero-stats">
           <h6 className="title">Project Done</h6>
-          <h2 className="sub-title">20+</h2>
+          <h2 className="sub-title">10+</h2>
           <h6 className="title">Years of Experience</h6>
           <h2 className="sub-title">2+</h2>
         </div>

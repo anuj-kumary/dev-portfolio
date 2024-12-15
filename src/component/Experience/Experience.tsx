@@ -21,7 +21,7 @@ const Experience = () => {
 
   return (
     <section className="experience-section">
-      <h1 className="experience-title">My Experience</h1>
+      <h1 className="experience-title">My <span className="text-gradient">Experience</span></h1>
       <div className="experience-container">
         {experiences.map((exp, index) => (
           <div className="experience-item" key={index}>
