@@ -5,7 +5,7 @@ const ContactUs: React.FC = () => {
   return (
     <div id='contact' className="contact-container">
       <div className="contact-content">
-        <h1>Send me a message!</h1>
+        <h1 className="contact-title">Send me a <span className="text-gradient">message!</span></h1>
         <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
         <form className="contact-form">
           <div className="row">
