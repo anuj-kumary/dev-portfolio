@@ -41,10 +41,6 @@
   letter-spacing: 1px;
 }
 
-.menu-button:hover {
-  background-color: #444;
-}
-
 .menu-options {
   display: none;
   flex-direction: column;
