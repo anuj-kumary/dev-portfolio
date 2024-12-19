@@ -68,10 +68,6 @@
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-
-.menu-option:hover {
-  background-color: #f0f0f0;
-}
 .nav-menu {
   display: flex;
   align-items: center;

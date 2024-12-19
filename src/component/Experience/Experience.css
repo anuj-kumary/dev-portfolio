@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 2rem;
-  background: #fff;
+  background: #282828;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -55,13 +55,13 @@
 .experience-year {
   font-size: 1rem;
   font-weight: bold;
-  color: #555;
+  color: #fff;
   margin-bottom: 0;
 }
 
 .experience-company {
   font-size: 1rem;
-  color: #777;
+  color: #fff;
   margin-top: 0.5rem;
   margin-top: 0;
 }
@@ -73,28 +73,27 @@
 
 .experience-icon {
   font-size: 1.2rem;
-  color: #555;
+  color: #fff;
   display: flex;
-
 }
 
 .experience-line {
   height: 1px;
-  background-color: #0840881C;
+  background-color: #ffffff1c;
   width: 50%;
 }
 
 .experience-role {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .experience-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #fff;
 }
 
 @media (max-width: 768px) {

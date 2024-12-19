@@ -28,7 +28,7 @@ export const HeroSection = () => {
             </div>
           </div>
           <div className="hero-avatar">
-            <img src="https://mone.flatheme.net/assets/images/hero-avatar@2x.jpg" />
+            <img src="/src/assets/images/IMG_3418.JPG" />
           </div>
         </div>
         <div className="hero-stats">
