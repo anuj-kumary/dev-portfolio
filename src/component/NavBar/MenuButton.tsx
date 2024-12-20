@@ -6,10 +6,8 @@ const MENU_OPTION = [
     { label: "Portfolio", name: "portfolio" },
     { label: "Experience", name: "experience" },
     { label: "Languages and Tools", name: "languages-tools" },
-    { label: "Contact", name: "contact" }
-]
-    ;
-
+    { label: "Contact", name: "contact" },
+];
 export const MenuButton: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
@@ -40,7 +38,16 @@ export const MenuButton: React.FC = () => {
             </button>
             <div className={`menu-options ${isMenuOpen ? "show" : ""}`}>
                 {MENU_OPTION.map((option) => (
-                    <a onClick={handleOptionClick} href={`#${option.name}`} className="menu-option">{option.label}</a>
+                    <>
+                        <a
+                            onClick={handleOptionClick}
+                            href={`#${option.name}`}
+                            className="menu-option"
+                        >
+                            <span className="menu-text">{option.label}</span>
+                        </a>
+
+                    </>
                 ))}
             </div>
         </div>
