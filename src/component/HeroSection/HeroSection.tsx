@@ -1,4 +1,4 @@
-import React from "react";
+import { Twitter, Github, Linkedin } from 'lucide-react';
 import "../HeroSection/HeroSection.css";
 export const HeroSection = () => {
   return (
@@ -22,9 +22,9 @@ export const HeroSection = () => {
             </div>
             <h5 className="bio-title">Connect</h5>
             <div className="social-media-list">
-              <li className="list social-menu">Twitter</li>
-              <li className="list social-menu">Github</li>
-              <li className="list social-menu">Linkedin</li>
+              <a target='_blank' href='https://x.com/TheRealAnujK' className="list social-menu"><Twitter /></a>
+              <a target='_blank' href='https://github.com/anuj-kumary' className="list social-menu"><Github /></a>
+              <a target='_blank' href='https://www.linkedin.com/in/anujkumaryadav05/' className="list social-menu"><Linkedin /></a>
             </div>
           </div>
           <div className="hero-avatar">

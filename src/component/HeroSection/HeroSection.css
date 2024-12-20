@@ -75,9 +75,12 @@
 }
 .social-menu{
     padding-Right: 1rem; 
+    text-decoration: none;
 }
 .list{
     list-style: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Responsive Design */
