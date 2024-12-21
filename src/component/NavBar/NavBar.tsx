@@ -1,4 +1,4 @@
-import "../Navbar/NavBar.css"
+import "./NavBar.css"
 import { MenuButton } from "./MenuButton"
 export const NavBar = () => {
   return (
