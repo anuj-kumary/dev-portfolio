@@ -8,32 +8,44 @@ const projects = [
   {
     image: "/src/assets/images/code-snippet.png",
     title: "Code Snippets Builder",
-    languages: ["React", "Typescript", "Open Source Contribution"],
+    languages: ["Typescript", "Open Source Contribution"],
+    github: "https://github.com/anuj-kumary/Code-Snippets-Builder",
+    live: "https://snippetbuilder.com/"
   },
   {
     image: "/src/assets/images/react-play.png",
     title: "ReactPlay",
     languages: ["React", "Open Source Contribution"],
+    github: "https://github.com/anuj-kumary/react-play",
+    live: "https://reactplay.io/"
   },
   {
     image: "/src/assets/images/ygc.png",
     title: "Your GitHub Contributions",
     languages: ["Open Source Contribution", "github"],
+    github: "https://github.com/anuj-kumary/Your-Github-Contributions",
+    live: "https://ygc.sachinchaurasiya.dev/"
   },
   {
     image: "/src/assets/images/eagle-store.png",
     title: "Eagle Store",
     languages: ["React", "React Context API "],
+    github: "https://github.com/anuj-kumary/Eagle-stores",
+    live: "https://eaglestores-react.netlify.app/"
   },
   {
     image: "/src/assets/images/techhub.png",
     title: "TechHub",
     languages: ["React", "React Context API "],
+    github: "https://github.com/anuj-kumary/TechHub",
+    live: "https://techhub-react.netlify.app/"
   },
   {
     image: "/src/assets/images/eagle-ui.png",
     title: "Eagle UI",
     languages: ["HTML", "CSS ", "Javascript"],
+    github: "https://github.com/anuj-kumary/EagleUI",
+    live: "https://eagleui.netlify.app/"
   },
 ];
 
@@ -78,6 +90,8 @@ export const PortfolioWork = () => {
               image={project.image}
               title={project.title}
               languages={project.languages}
+              github={project.github}
+              live={project.live}
             />
           ))}
         </div>

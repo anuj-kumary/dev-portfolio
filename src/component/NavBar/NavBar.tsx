@@ -5,7 +5,7 @@ export const NavBar = () => {
     <nav className="navbar">
       <h3>{'<Anujkumar Yadav />'}</h3>
       <div className="nav-menu">
-        <button className="lets-talk-btn"> Let&apos;s talk</button>
+        <a href="#contact" className="lets-talk-btn"> Let&apos;s talk</a>
         <MenuButton />
       </div>
     </nav>

@@ -5,16 +5,26 @@
   overflow: hidden;
   flex: 1 0 calc(33.333% - 20px);
   margin: 0 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-image {
   width: 100%;
-  height: 200px;
+  height: 180px; 
   object-fit: cover;
 }
 
 .card-content {
   padding: 16px;
+  flex-grow: 1;
+  height: 150px;
 }
 
 .card-title {
@@ -54,6 +64,40 @@
   line-height: 50px;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
+}
+
+.card-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 1.5rem;
+  position:absolute;
+  bottom: 10px;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid transparent;
+  background-image:
+                    -webkit-linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-clip: border-box;
+  transform: scale(1.05);
 }
 
 /* Responsive Design */
