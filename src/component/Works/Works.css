@@ -32,3 +32,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+    .heading{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2em;
+    }
+}

@@ -95,3 +95,16 @@
     padding: 0.4rem 0.8rem;
   }
 }
+
+@media (max-width: 768px) {
+
+  .lets-talk-btn {
+    width: 100%; 
+    text-align: center;
+    margin-right: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size:.6em;
+    margin-right: .5rem;
+  }
+}
