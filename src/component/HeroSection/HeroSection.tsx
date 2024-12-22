@@ -28,7 +28,7 @@ export const HeroSection = () => {
             </div>
           </div>
           <div className="hero-avatar">
-            <img src="/src/assets/images/IMG_3418.JPG" />
+            <img src="https://res.cloudinary.com/anujy0510/image/upload/v1734767060/IMG_3418_o5zciz.jpg" />
           </div>
         </div>
         <div className="hero-stats">
