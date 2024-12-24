@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS", // Node.js modules
+    "target": "ESNext",   // Target modern JS
+    "strict": true,       // Enable strict type checking
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "outDir": "./dist"    // Output directory for compiled files
+  },
+  "include": [
+    "vite.config.ts",     // Include the Vite configuration file
+    "src/**/*.ts"         // Include any TypeScript files in the src folder
+  ],
+  "exclude": [
+    "node_modules"        // Exclude node_modules
+  ]
+}

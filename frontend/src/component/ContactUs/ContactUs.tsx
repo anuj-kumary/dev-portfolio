@@ -1,7 +1,25 @@
 import React from 'react';
 import './ContactUs.css';
+import { sendEmail } from '../../rest/email.rest';
+
+
+const emailData = {
+  to: 'anujf0510@example.com',
+  from: 'anujf0510@example.com',
+  subject: 'Welcome to Our Service',
+  body: '<p>Thank you for joining our platform!</p>'
+};
+
 
 const ContactUs: React.FC = () => {
+  const handleContactApi = async () => {
+    try {
+      const response = await sendEmail(emailData)
+      console.log(response, "response")
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div id='contact' className="contact-container">
       <div className="contact-content">
@@ -15,7 +33,7 @@ const ContactUs: React.FC = () => {
           <div className="row">
             <textarea name="message" placeholder="Your Message" className="textarea" required></textarea>
           </div>
-          <button type="submit" className="button">Shoot</button>
+          <button onClick={handleContactApi} className="button">Shoot</button>
         </form>
       </div>
     </div>
