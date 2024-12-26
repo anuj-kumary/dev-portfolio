@@ -4,6 +4,7 @@ import { Works } from './component/Works/Works'
 import { LanguagesAndTools } from './component/LanguagesAndTools/LanguagesAndTools'
 import Experience from './component/Experience/Experience'
 import ContactUs from './component/ContactUs/ContactUs'
+import { ScrollToTop } from './component/ScrollToTop/ScrollToTop'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Experience />
     <LanguagesAndTools />
     <ContactUs />
+    <ScrollToTop />
     </>
   )
 }

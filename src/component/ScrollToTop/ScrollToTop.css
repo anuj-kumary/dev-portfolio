@@ -1,0 +1,34 @@
+.button-circle {
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: linear 0.1s;
+    transition: linear 0.1s;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: "none";
+}
+
+.button-circle:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #ff82f3;
+    background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: linear 0.1s;
+    transition: linear 0.1s;
+}
