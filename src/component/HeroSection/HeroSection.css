@@ -1,178 +1,195 @@
-.name{
-    font-size: 6em;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 1px;
-    text-align: center;
+.name {
+  font-size: 6em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  text-align: center;
 }
-.about-me{
-    display: flex;
-    justify-content: space-between;
-    padding-right:2rem ;
-    padding-left:2rem ;
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
-.about-container{
-    display: flex;
-    width: 70%;
+.about-container {
+  display: flex;
+  width: 70%;
 }
-.skills-list{
-    display: flex;
+.skills-list {
+  display: flex;
 }
-.social-media-list{
-    display: flex;
+.social-media-list {
+  display: flex;
 }
-.title{
-    font-family: "Outfit", sans-serif;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
+.title {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
-.bio{
-    margin: 0;
-    line-height: 1.74;
-    font-size: 1rem;
-    font-weight: 400;
+.bio {
+  margin: 0;
+  line-height: 1.74;
+  font-size: 1rem;
+  font-weight: 400;
 }
-.hero-avatar{
-    margin-left: 7rem;
+.hero-avatar {
+  margin-left: 7rem;
 }
 .hero-avatar img {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image doesn't distort */
-    transition: width 0.3s ease, height 0.3s ease; /* Smooth resizing */
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image doesn't distort */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth resizing */
 }
-.title{
-    font-family: "Outfit", sans-serif;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    margin: 0;
+.title {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0;
 }
-.sub-title{
-    line-height: 1.1;
-    font-weight: 300;
-    margin-top: 1rem;
-    font-size: 3.5rem;
-    letter-spacing: -0.3px;
+.sub-title {
+  line-height: 1.1;
+  font-weight: 300;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  letter-spacing: -0.3px;
 }
-.bio-title{
-    font-family: "Outfit", sans-serif;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
+.bio-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
-.skill-menu{
-    list-style-type: circle;
-    padding-Right: 1rem;
+.skill-menu {
+  list-style-type: circle;
+  padding-right: 1rem;
 }
-.social-menu{
-    padding-Right: 1rem; 
-    text-decoration: none;
+.social-menu {
+  padding-right: 1rem;
+  text-decoration: none;
 }
-.list{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
+.list {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+.resume-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: -webkit-linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
+  font-family: "Outfit", sans-serif;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .name {
-        font-size: 4em;
-    }
+  .name {
+    font-size: 4em;
+  }
 
-    .hero-avatar img {
-        width: 250px;
-        height: 250px;
-    }
+  .hero-avatar img {
+    width: 250px;
+    height: 250px;
+  }
 
-    .sub-title {
-        font-size: 3rem;
-    }
+  .sub-title {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .name {
-        font-size: 3em;
-    }
+  .name {
+    font-size: 3em;
+  }
 
-    .about-me {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .hero-avatar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-    }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
 
-    .hero-avatar img {
-        width: 200px;
-        height: 200px;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
+  .hero-avatar img {
+    width: 200px;
+    height: 200px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 
-    .skills-list, .social-media-list {
-        justify-content: center;
-    }
+  .skills-list,
+  .social-media-list {
+    justify-content: center;
+  }
 
-    .sub-title {
-        font-size: 2.5rem;
-    }
-    .hero-stats{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .sub-title {
+    font-size: 2.5rem;
+  }
+  .hero-stats {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-    .name {
-        font-size: 2em;
-    }
+  .name {
+    font-size: 2em;
+  }
 
-    .bio {
-        font-size: 0.9rem;
-    }
+  .bio {
+    font-size: 0.9rem;
+  }
 
-    .sub-title {
-        font-size: 2rem;
-    }
+  .sub-title {
+    font-size: 2rem;
+  }
 
-    .hero-avatar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-    }
+  .hero-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
 
-    .hero-avatar img {
-        width: 150px;
-        height: 150px;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-    .hero-stats{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
+  .hero-avatar img {
+    width: 150px;
+    height: 150px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .hero-stats {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }

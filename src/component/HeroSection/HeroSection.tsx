@@ -15,6 +15,7 @@ export const HeroSection = () => {
               experience of working with industrial projects in different
               domains.
             </p>
+            <button className='resume-btn'>Download Resume</button>
             <h5 className="bio-title">Skills</h5>
             <div className="skills-list">
               <li className="skill-menu">Web development</li>
