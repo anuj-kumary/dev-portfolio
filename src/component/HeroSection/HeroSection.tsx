@@ -1,6 +1,11 @@
 import { Twitter, Github, Linkedin } from 'lucide-react';
 import "../HeroSection/HeroSection.css";
 export const HeroSection = () => {
+  const handleDownload = () => {
+    const downloadLink = "https://drive.google.com/file/d/1wP0H_ycqZP6Vz_n9VdosyCpQKUFYJpkZ/view?usp=sharing";
+
+    window.open(downloadLink, '_blank');
+  };
   return (
     <div>
       <h1 className="name">Anujkumar Yadav</h1>
@@ -15,7 +20,7 @@ export const HeroSection = () => {
               experience of working with industrial projects in different
               domains.
             </p>
-            <button className='resume-btn'>Download Resume</button>
+            <button onClick={handleDownload} className='resume-btn'>Download Resume</button>
             <h5 className="bio-title">Skills</h5>
             <div className="skills-list">
               <li className="skill-menu">Web development</li>
