@@ -6,7 +6,6 @@ require("dotenv").config();
 const authRoutes = require("./authRoutes");
 
 const app = express();
-const router = express.Router();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
