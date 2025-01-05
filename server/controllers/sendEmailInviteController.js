@@ -2,15 +2,28 @@ const sendEmail = require("../utils/mailer");
 
 exports.sendEmailInvite = async (req, res) => {
   try {
-    const { email } = req.body;
+    const { email,name,message } = req.body;
 
     const mailerOptions = {
-      from: email,
-      to: "anujf0510@gmail.com",
-      subject: `Cashbox Invitation Request`,
-      text: "Hello! You've been invited to our platform cashbox.",
-      html: "<p>Hello! You've been invited to our platform. Click <a href='#'>here</a> to join us.</p>",
-    };
+        from: email,
+        to: "anujf0510@gmail.com",
+        subject: `New Contact Request from ${name}`,
+        text: `
+            You have a new contact request:
+            
+            Name: ${name}
+            Email: ${email}
+            Message: ${message}
+          `,
+        html: `
+            <p>You have a new contact request:</p>
+            <ul>
+              <li><strong>Name:</strong> ${name}</li>
+              <li><strong>Email:</strong> <a href="mailto:${email}">${email}</a></li>
+              <li><strong>Message:</strong> ${message}</li>
+            </ul>
+          `,
+      };
 
     await sendEmail(mailerOptions);
 

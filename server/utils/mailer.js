@@ -1,3 +1,5 @@
+const nodemailer = require("nodemailer");
+
 const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL_USER,
@@ -10,7 +12,7 @@ const transporter = nodemailer.createTransport({
 });
 
 function sendEmail(mailOptions) {
-  mailOptions.from = `"Cashbox Notifications" <${process.env.EMAIL_ADDRESS}>`;
+  mailOptions.from = `"Portfolio Notifications" <${process.env.EMAIL_ADDRESS}>`;
 
   transporter.sendMail(mailOptions, function (err) {
     if (err) {
