@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/send-email",sendEmailRoutes);
+app.get("/" , `Server is running at ${PORT}`);
 
 // Start the Server
 app.listen(PORT, () => {
