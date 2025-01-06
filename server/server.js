@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/send-email",sendEmailRoutes);
-app.get("/" , `Server is running at ${PORT}`);
+app.get("/", (_req, res) => {
+  res.status(200).json({ message: `Server is running on port ${PORT}` });
+});
 
 // Start the Server
 app.listen(PORT, () => {
