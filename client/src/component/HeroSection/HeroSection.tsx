@@ -2,7 +2,7 @@ import { Twitter, Github, Linkedin } from 'lucide-react';
 import "../HeroSection/HeroSection.css";
 export const HeroSection = () => {
   const handleDownload = () => {
-    const downloadLink = "https://drive.google.com/file/d/1wP0H_ycqZP6Vz_n9VdosyCpQKUFYJpkZ/view?usp=sharing";
+    const downloadLink = "https://drive.google.com/file/d/1OGSO-Am51RHwQV9JB--nfde-lkPpHrDT/view?usp=sharing";
 
     window.open(downloadLink, '_blank');
   };
