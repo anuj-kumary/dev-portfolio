@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <h5 className="bio-title">Skills</h5>
             <div className="skills-list">
               <li className="skill-menu">Web development</li>
-              <li className="skill-menu">App development</li>
+              <li className="skill-menu-app">App development</li>
             </div>
             <h5 className="bio-title">Connect</h5>
             <div className="social-media-list">

@@ -17,6 +17,12 @@
 }
 .skills-list {
   display: flex;
+  padding-left: 15px;
+}
+
+.skill-menu-app{
+  margin-left: 15px;
+  list-style-type: circle;
 }
 .social-media-list {
   display: flex;
